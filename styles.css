@@ -1,0 +1,213 @@
+/* Updated Color Palette */
+:root {
+    --primary-color: #222831; /* Charcoal */
+    --secondary-color: #00ADB5; /* Aqua */
+    --background-color: #F8F9FA; /* Light Gray */
+    --white: #FFFFFF; /* White */
+    --accent-color: #FF5722; /* Deep Orange */
+    --highlight-color: #FFEB3B; /* Bright Yellow */
+}
+
+body {
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, var(--background-color) 70%, var(--accent-color) 100%);
+    color: var(--primary-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+/* Buttons */
+button {
+    background: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: var(--accent-color);
+}
+
+/* To-Do Section */
+.todo-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#todo-input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#add-todo {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#add-todo:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+
+/* Lists */
+#todo-list,
+#mood-list,
+#gratitude-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#todo-list li,
+#mood-list li,
+#gratitude-list li {
+    background: var(--accent-color);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+/* Affirmation Messages */
+.affirmation-card-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.gratitude-section input,
+#add-gratitude,
+#mood-select,
+#save-mood {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Reflection Message */
+.reflection-message,
+.mood-select {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
